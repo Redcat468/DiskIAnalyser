@@ -1,4 +1,7 @@
 # DiskIAnalyser
+
+###This is a work-in-progress
+
 A simple python script to run on TrueNAS server to analyze the SMART disk reports using ChatGPT.
 The goal is to leverage the ChatGPT 3.5 Turbo API to read your disk's SMART reports and generate a simplified report with a health score for each disk. Once the report is generated, it is sent via email.
 
