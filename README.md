@@ -21,6 +21,11 @@ After extracting the package, navigate to the package directory and use the setu
 <code>cd openai-x.x.x
 python3 setup.py install</code>
 
+You will need an openai API key.
+You need to edit the script to set the variables at the begining of the script.
+
+
+
 # Result
 Here is an example of a report that the script generates : 
 
