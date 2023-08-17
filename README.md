@@ -1,18 +1,19 @@
 # DiskIAnalyser
-A simple python script to run on TrueNAS server and to analyse the SMART  disks reports via chatGPT;
-Le but est d'utiliser l'API de ChatGPT 3.5 Turbo pour lire les rapports SMART de vos disques et de generer un rapport simplifié avec un score de santé de chaque disque. Le rapport est envoyé par mail une fois qu'il a été généré.
-Ce script nécéssite l'installation du module openai, si vous ne souhaitez pas utiliser pip, vous pouvez faire comme ça : 
+A simple python script to run on TrueNAS server to analyze the SMART disk reports using ChatGPT.
+The goal is to leverage the ChatGPT 3.5 Turbo API to read your disk's SMART reports and generate a simplified report with a health score for each disk. Once the report is generated, it is sent via email.
 
-Télécharger le paquet:
-Rendez-vous sur la page PyPI du module. Pour openai, l'URL est généralement la suivante :
+This script requires the installation of the openai module. If you don't want to use pip, you can follow these steps:
+
+Download the package:
+Visit the PyPI page for the module. For openai, the URL is typically:
 https://pypi.org/project/openai/
 
-Vous y trouverez des fichiers tar.gz pour différentes versions du module. Téléchargez le fichier .tar.gz qui correspond à la version que vous souhaitez.
-Une fois le téléchargement terminé, transférez le fichier .tar.gz sur votre serveur TrueNAS (vous pouvez utiliser scp ou toute autre méthode de votre choix). Une fois le fichier sur le serveur, extrayez son contenu :
+Here you will find tar.gz files for various versions of the module. Download the .tar.gz file that corresponds to the version you want.
+Once downloaded, transfer the .tar.gz file to your TrueNAS server (you can use scp or any method of your choice). Once the file is on the server, extract its contents:
 
 <code>tar -xzf openai-x.x.x.tar.gz</code>
 
-Après avoir extrait le paquet, vous devez vous déplacer dans le répertoire du paquet et utiliser la commande setup.py pour installer le module :
+After extracting the package, navigate to the package directory and use the setup.py command to install the module:
 
 <code>cd openai-x.x.x
 python3 setup.py install</code>
