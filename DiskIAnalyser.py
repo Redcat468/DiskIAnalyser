@@ -10,9 +10,6 @@ SMTP_USER = "enter_the_sender_mail"
 SMTP_PASSWORD = "enter_the_sender_mail_password"
 EMAIL_RECEIVER = "enter_the_receiver_here"
 
-# ------- Configuration OpenAI -------
-openai.api_key = 'api_key_here'
-
 # ------- Partie récupération des logs SMART -------
 LOG_DIR = "choose_a_dir_to_put_the_smart_reports"
 import os
@@ -48,7 +45,7 @@ def analyze_smart_data():
         import requests
 
         # Remplacez 'YOUR_API_KEY' par votre clé d'API GPT-3
-        api_key = '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'
+        api_key = ''
         url = 'https://api.openai.com/v1/chat/completions'
         
 #----- Un peu de mise en forme pour séparer les infos dans le rapport
