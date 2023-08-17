@@ -22,6 +22,7 @@ After extracting the package, navigate to the package directory and use the setu
 python3 setup.py install</code>
 
 You will need an openai API key.
+
 You need to edit the script to set the variables at the begining of the script.
 
 
