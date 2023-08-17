@@ -45,7 +45,7 @@ def analyze_smart_data():
         import requests
 
         # Remplacez 'YOUR_API_KEY' par votre clé d'API GPT-3
-        api_key = ''
+        api_key = 'YOUR_API_KEY'
         url = 'https://api.openai.com/v1/chat/completions'
         
 #----- Un peu de mise en forme pour séparer les infos dans le rapport
