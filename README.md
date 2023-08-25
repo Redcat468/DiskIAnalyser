@@ -29,10 +29,11 @@ You need to edit the config.ini to set the variables before starting the script.
 
 # Using
 Configure the config.ini file with your mail and openai api key then do :
-```
-python ./DiskIAnalyser.py
-```
+
+<code> python ./DiskIAnalyser.py
+
 And here you go.
+
 ```
   __________________
  |  :           :  |
