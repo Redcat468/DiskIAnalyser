@@ -4,7 +4,7 @@ This is a work-in-progress
 
 It's a simple python script to run on TrueNAS server to analyze the SMART disk reports using ChatGPT.
 The goal is to leverage the GPT 3.5 Turbo and GPT4 API to read your disk's SMART reports and generate a simplified report with a health score for each disk. Once the report is generated, it is formatted in html and sent via email.
-Another function of this script allow the user to select a specific disk and run an analysis against the result of the <code> smartctl -a /dev/daxx 
+Another function of this script allow the user to select a specific disk and run an analysis against the result of ```smartctl -a /dev/daxx ```
 
 This script requires the installation of the openai module. If you don't want to use pip, you can follow these steps:
 
@@ -18,10 +18,10 @@ Once downloaded, transfer the .tar.gz file to your TrueNAS server (you can use s
 <code>tar -xzf openai-x.x.x.tar.gz</code>
 
 After extracting the package, navigate to the package directory and use the setup.py command to install the module:
-
-<code>cd openai-x.x.x
-python3 setup.py install</code>
-
+```bash
+cd openai-x.x.x
+python3 setup.py install
+```
 You will need an openai API key. And to access GPT4 API you can follow this guide https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4
 
 You need to edit the config.ini to set the variables before starting the script.
@@ -29,9 +29,9 @@ You need to edit the config.ini to set the variables before starting the script.
 
 # Using
 Configure the config.ini file with your mail and openai api key then do :
-
-<code> python ./DiskIAnalyser.py
-
+```bash
+python ./DiskIAnalyser.py
+```
 And here you go.
 
 ```
