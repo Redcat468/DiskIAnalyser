@@ -6,6 +6,8 @@ It's a simple python script to run on TrueNAS server to analyze the SMART disk r
 The goal is to leverage the GPT 3.5 Turbo and GPT4 API to read your disk's SMART reports and generate a simplified report with a health score for each disk. Once the report is generated, it is formatted in html and sent via email.
 Another function of this script allow the user to select a specific disk and run an analysis against the result of ```smartctl -a /dev/daxx ```
 
+# Installation
+
 This script requires the installation of the openai module. If you don't want to use pip, you can follow these steps:
 
 Download the package:
